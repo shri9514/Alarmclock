@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <!-- Adding Favicon Here  -->
+    <link rel="icon" href="Media/favicon.ico" />
+    <!-- Adding Css Stylesheet Here  -->
+    <link rel="stylesheet" href="Media/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- This Container For Alarm Clock -->
+      <div class="container">
+        <!-- This Div For Main Clock Face -->
+        <div class="cl-face">
+          <h1 id="clock-face"></h1>
+        </div>
+        <!-- This Div For Setting Alarm -->
+        <form id="set_Alarm" class="" onsubmit="return doForm()">
+          <div class="setAlarm">
+            <select required name="hours" id="hours"></select>
+            :
+            <select required name="minutes" id="minutes"></select>
+            :
+            <select required name="seconds" id="seconds"></select>
+
+            <select required name="am-pm" id="am-pm">
+              <option value="AM" selected>AM</option>
+              <option value="PM" selected>PM</option>
+            </select>
+            <div class="btn">
+              <input id="button" type="submit" value="Set Alarm" />
+            </div>
+          </div>
+        </form>
+        <!-- This Div For Display Setted Alarm Here -->
+        <div class="displayAlarm">
+          <hr />
+          <h2>Alarms</h2>
+          <div id="displayAlarmList"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
