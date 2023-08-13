@@ -1,7 +1,7 @@
 # Alarmclock
 Digital Alarm Clock
 A basic Alarm Clock
-Link : https://sahil-sayyad.github.io/AlarmClock/
+Link : 
 
 Features
 *Set : Set the Alarm
